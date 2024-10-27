@@ -3,28 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <style>
         body {
+            background-color: rgb(61, 61, 139);
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 98vh;
+            height: 99vh;
         }
 
-        a {
-            border: none;
-            background-color: cadetblue;
-            border-radius: 5px;
-            font-size: 20px;
-            padding: 10px 40px;
+        .container {
+            background-color: transparent;
+            border: 5px solid white;
+            width: 400px;
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .gaveta {
+            background-color: black;
+            width: 100%;
+            height: auto;
+            flex: 1;
+            border: 1px solid gray;
+
+        }
+
+        .fenda {
+            display: block;
+            margin: auto;
+            width: 90px;
+            transform: translateY(-24px);
         }
     </style>
-    <a href="bbbb/b.html">Clica aqui vai</a>
-    <script src="script.js"></script>
+
+    <div class="container">
+        <div class="gaveta">
+            <img class="fenda" src="./images/icons8-half-circle-48.png" />
+        </div>
+        <div class="gaveta">
+            <img class="fenda" src="./images/icons8-half-circle-48.png" />
+        </div>
+        <div class="gaveta">
+            <img class="fenda" src="./images/icons8-half-circle-48.png" />
+        </div>
+    </div>
 </body>
 
 </html>
